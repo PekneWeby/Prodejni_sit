@@ -1,0 +1,177 @@
+:root{
+    --active-fill: #d20a11;
+    --over-fill: rgba(41,41,41, 0.6);
+    --background-color: #292929;
+    --text-colorSir: white;
+}
+
+.mapaOver{
+    fill: var(--over-fill) !important;
+}
+
+.mapaActive{
+    fill: var(--active-fill) !important;
+}
+
+.ceska-mapa {
+    cursor: pointer;
+    fill: #FFF;
+    stroke: #e9ecee;
+    stroke-width: 3px;
+}
+
+.ceskaMapa svg {
+    width: 90% !important;
+    height: fit-content;
+}
+
+.shop-info p{
+    margin: 5px 0 !important;
+    font-size: smaller;
+    color: var(--text-colorSir)!important;
+}
+
+.shop-info a{
+    margin: 5px 0 !important;
+    color: var(--text-colorSir) !important;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.shop-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid white;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.shop-image img {
+    width: 100Px;
+}
+
+label.select--big.mb-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+select#kraj {
+    padding: 10px;
+    border: 2px solid #292929;
+    min-width: 100%;
+}
+
+button.btn.btn--big {
+    width: 100%;
+    text-align: center;
+    background: #292929;
+    padding: 10px;
+    border-radius: 0;
+    color: white;
+}
+
+
+.shop {
+    background: var(--background-color);
+    color: var(--text-colorSir) !important;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    height: 100%;
+}
+
+#udaje p{
+    margin: 5px 0;
+    color: var(--text-colorSir) !important;
+}
+
+#oteviraciDoba p{
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--text-colorSir) !important;
+}
+
+.in-prodejni-sit .content-inner h1{
+    text-align:left;
+}
+
+.in-prodejni-sit .content-inner form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.in-prodejni-sit div.col-md-8.d-flex.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+.in-prodejni-sit .shop h2{
+    color: var(--text-colorSir) !important;
+    margin: 0;
+}
+
+.in-prodejni-sit .shop p{
+    color: var(--text-colorSir) !important;
+}
+
+@media(max-width: 968px){
+    .ceskaMapa svg {
+        width: 100% !important;
+        height: fit-content;
+        margin-top: 30px;
+    }
+    .shop{
+        width: calc(100%);
+        margin-right: 0 !important;
+    }
+
+    .shopsVypis{
+        justify-content: center;
+    }
+}
+
+.row.shopsVypis {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 0;
+}
+
+#fetchData{
+    display: none;
+}
+
+div#textNotStore {
+    margin-left: 20px;
+}
+
+.shop-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-info {
+    width: calc(100% - 100px);
+}
+
+div#udajeText {
+    width: 100%;
+    color: var(--text-colorSir) !important;
+}
+
+div#udajeText p:empty {
+    display:none;
+}
+
+div#udajeText p {
+    margin-bottom: 0 !important;
+    color: var(--text-colorSir) !important;
+}
