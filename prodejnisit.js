@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function fetchAndDisplayShops(krajId) {
-            fetch(`https://prodejnisit.pekneweby.com/getShops/${krajId}/${baseUrl}`)
+            fetch(`https://prodejnisit.scrskripty.cz/getShops/${krajId}/${baseUrl}`)
                 .then(response => response.json())
                 .then(displayShops)
                 .catch(error => console.error('Chyba při načítání prodejen:', error));
