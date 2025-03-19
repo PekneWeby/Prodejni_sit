@@ -44,7 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function displayShops(data) {
-            let text = data.text ?? '<div id="textNotStore"><p>V tomto kraji se prozatím nenachází žádná prodejna.</p><p><strong>Hledáme nové distributory!</strong></p><p>Chcete se stát součástí naší prodejní sítě a nabídnout zákazníkům špičkové produkty z oblasti pneumatického a aku nářadí?</p><p>Neváhejte nás kontaktovat – rádi s vámi probereme možnosti spolupráce a společně vybudujeme úspěšné partnerství <br> +420 724 860 343</p></div>';
+            let text = `<div id="textNotStore">${data.text ?? `<p>V tomto kraji se prozatím nenachází žádná prodejna.</p>
+<p><strong>Hledáme nové distributory!</strong></p>
+<p>Chcete se stát součástí naší prodejní sítě a nabídnout zákazníkům špičkové produkty z oblasti pneumatického a aku nářadí?</p>
+<p>Neváhejte nás kontaktovat – rádi s vámi probereme možnosti spolupráce a společně vybudujeme úspěšné partnerství <br> +420 724 860 343</p>`}</div>`;
             shopsContainer.innerHTML = (data.shops && data.shops.length > 0) ? '' : text;
 
             if(data.color){
